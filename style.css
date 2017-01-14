@@ -1,0 +1,209 @@
+
+html, * {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+body {
+	 background: -webkit-radial-gradient(#484848, #222);
+	 background: -o-radial-gradient(#484848, #222);
+	 background: -moz-radial-gradient(#484848, #222);
+	 background: radial-gradient(#484848, #222);
+	 color: #fff;
+	 min-height: 100vh;
+	 font-size: 10pt;
+	 font-family: arial;
+	 line-height: 14pt;
+}
+
+h3 {
+	text-align: center;
+	font-size: 18pt;
+	line-height: 26pt;
+	color: #00aaff;
+	font-variant: small-caps;
+	padding: 1em 0;
+}
+
+#Clear {
+	font-size: 0;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+
+
+
+*:focus {
+    outline: none;
+}
+
+/***** Header *****/
+	#Header {
+		width: 100%;
+		display: block;
+		background-color: rgba(0,0,0,.7);
+		text-align: justify;
+		line-height: 0;
+	}
+
+	#Header:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	#Header a {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 70%;
+		padding: 20px 3%;
+		line-height: 0;
+		font-size: 0;
+	}
+
+	#Header a img {
+		width: 100%;
+	}
+
+	#Header .House {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 20%;
+		padding: 12px 0;
+		right: 1%;
+	}
+
+
+
+
+/***** Home Page *****/
+	.SalesPitch {
+		max-width: 26vw;
+		background-color: rgba(0,0,0,.7);
+		border-radius: 10px;
+		margin-left: 2vw;
+		margin-top: 20px;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+	}
+
+	.SalesPitch ul {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
+
+	.SalesPitch form{
+		margin: 0 auto;
+	}
+
+	.SalesPitch hr {
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		color: #00aaff;
+		margin-top: 3em;
+	}
+
+
+/***** Register *****/
+
+	.Register {
+		display: inline-block;
+		max-width: 96vw;
+		min-width: 61.6vw;
+		margin: 20px 2vw;
+		vertical-align: top;
+		background-color: rgba(0,0,0,.7);
+		border-radius: 10px;
+		padding: 1vw 1.5vw;
+	}
+
+	.Register >  * {
+		z-index: 2;
+	}
+
+	.Register img.Buildings {
+		float: right;
+		max-width: 30%;
+	}
+
+	.Register h4 {
+		color: #00aaff;
+		font-size: 12pt;
+		position: absolute;
+		top: 1em;
+		text-shadow: 1px 1px #000;
+	}
+
+	form {
+		margin: 4em 0;
+		max-width: 60%;
+	}
+
+	form > * {
+		margin-top: 1em;
+	}
+
+	form input {
+		display: block;
+		border: none;
+		border-left: 1px solid #00aaff;
+		border-bottom: 2px solid #00aaff;
+		background-color: rgba(0,0,0,0);
+		font-size: 16pt;
+		padding: 2pt .4em;
+		width: calc(100% - .8em);
+		color: #fff;
+	}
+
+	form button {
+		font-size: 16pt;
+		width: 100%;
+		color: #ccc;
+		background-color: #00aaff;
+		padding: 6pt;
+		text-transform: uppercase;
+		border: none;
+	}
+
+	form button:hover {
+		color: #fff;
+		cursor: pointer;
+	}
+
+	form button:active {
+		background: #99DBFF;
+	}
+
+	.Register p {
+		position: absolute;
+		bottom: 1vw;
+		right: 1.5vw;
+		color: #00aaff;
+		font-size: 10pt;
+	}
+
+	.Error {
+		/*color: #cc0000;*/
+		/*border: 1px solid #cc0000;*/
+	}
+
+	form .invalid, form .valid {
+		display: none;
+		float: right;
+		margin-top: -2.5em;
+		right: -50px;
+		width: 41px;
+		text-align: center;
+	}
+
+	form .invalid {
+		width: 3px;
+		right: -25px;
+	}
